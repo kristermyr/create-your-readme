@@ -8,14 +8,14 @@ return `# ${data.ProjectTitle}
 * [Credits](#Credits)
 * [License](#License)
 
-[#installation]
+## installation
 ${data.Installation}
 ${data.Github}
-[#Usage]
+## Usage
 ${data.Usage}
-#Credits
+## Credits
 ${data.Credits}
-#Licence
+## Licence
 ${data.License}
 `;
 }

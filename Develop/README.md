@@ -4,12 +4,12 @@
 * [Credits](#Credits)
 * [License](#License)
 
-[#installation]
-Installation
-GITbugh
-#Usage
-Use
-#Credits
-Credits
-#Licence
-Licesnse
+## installation
+Krister
+Krister
+## Usage
+Krister
+## Credits
+Krister
+## Licence
+Krister
