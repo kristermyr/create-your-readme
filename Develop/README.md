@@ -9,12 +9,12 @@
   * [License](#License)
   
   ## Installation
-  Krister
+  KRister
   Krister
   ## Usage
   Krister
   ## Credits
   Krister
   ## License
-  Krister
+  MIT
 

@@ -32,9 +32,10 @@ const questions = [
         name: 'Credits',
       },
       {
-        type: 'input',
+        type: 'checkbox',
         message: 'Which license does your project have?',
         name: 'License',
+        choices: ["MIT", "GPLv2", "Apache", "GPLv3", "BSD 3-clause", "BSD 2-clause", "N/A"],
       },
       {
         type: 'url',
