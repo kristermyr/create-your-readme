@@ -1,20 +1,34 @@
-# Krister
-
-  ## Description
-  Krister
+# k
+  ![Github license](https://img.shields.io/badge/License--brightgreen)
   
+  ## Description
+  k
+  
+  ## Table of Contents
   * [installation](#installation)
   * [Usage](#Usage)
   * [Credits](#Credits)
   * [License](#License)
-  
+  * [Contributing](#Contributing)
+  * [Tests](#Tests)
+  * [Questions](#Questions)
+
   ## Installation
-  KRister
-  Krister
+  k
+  k
   ## Usage
-  Krister
+  k
+  ## Dependencies
+  k
   ## Credits
-  Krister
+  k
   ## License
-  MIT
+  
+  ## Contributing
+  k
+  ## Tests
+  k
+  ## Questions
+  Github Username: k
+  Please send me an E-mail if you have any questions [here](mailto:k) or visit https://github.com/k
 
