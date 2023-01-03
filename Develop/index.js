@@ -1,16 +1,16 @@
-// TODO: Include packages needed for this application
+//packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
 const markDown = require('./utils/generateMarkdown')
-const path = require("path");
-// TODO: Create an array of questions for user input
+
+//  array of questions for user input
 const questions = [
 
     {
       type: 'input',
       message: 'What is your project title?',
       name: 'ProjectTitle',
-      validate:(value) =>{if(value){return true} else {return 'I need an answer to continue'}}
+      validate:(value) =>{if(value){return true} else {return 'I need an answer to continue'}}  // response if user does not write an answer
     },
     {
       type: 'input',
@@ -26,9 +26,9 @@ const questions = [
     },
     {
       type: 'input',
-      message: 'Add a screenshot by using ![alt text](assets/images/screenshot.png',
+      message: 'How do you use the app? Add a screenshot by using by using ./assets/images/screenshot.png',
       name: 'Usage',
-      validate:(value) =>{if(value){return true} else {return 'I need an answer to continue'}}
+      
     },
     {
         type: 'input',
@@ -40,7 +40,7 @@ const questions = [
         type: 'checkbox',
         message: 'Which license does your project have?',
         name: 'License', 
-        choices: ["MIT", "GPLv2", "Apache", "GPLv3", "BSD 3-clause", "BSD 2-clause", "N/A"],
+        choices: ["MIT","GPLv2","Apache","GPLv3","Eclipse", "N/A"],
         validate:(value) =>{if(value){return true} else {return 'I need an answer to continue'}}
       },
       {
@@ -82,26 +82,24 @@ const questions = [
     ];
  
 
-// TODO: Create a function to write README file
+//function to write README file
 function writeToFile(fileName, data) {
   fs.writeFileSync(fileName,data, function(err) {
-    console.log(filename)
-    console.log(data)
     if(err) {
       return console.log(err)
     } else {
-      console.log("Success! Your Readme file has been created.")
+      console.log("Success! Your Readme file has been created.")   //message to user when readme file has been created
     }
   })
 }
 
 
-// TODO: Create a function to initialize app
+//function to initialize app
 function init() {
   inquirer.prompt(questions)
     .then(function(data) {
-      writeToFile('README.md', markDown(data));
-      console.log(data)
+      writeToFile('README.md', markDown(data));      //writes content of GeneratemarkDown function to readme
+      console.log("Success! Your Readme file has been created.")
     })
 }
 
