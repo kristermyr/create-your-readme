@@ -26,7 +26,7 @@ const questions = [
     },
     {
       type: 'input',
-      message: 'How do you use the app? Add a screenshot by using by using ./assets/images/screenshot.png',
+      message: 'Add a screenshot by using by using ./assets/images/screenshot.png',
       name: 'Usage',
       
     },
@@ -63,7 +63,7 @@ const questions = [
       },
       {
         type: 'input',
-        message: 'How can a user test the application?',
+        message: 'Do you have any tests for the application?',
         name: 'Tests',
         validate:(value) =>{if(value){return true} else {return 'I need an answer to continue'}}
       },
